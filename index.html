@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- bootstrap icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Pizza</title>
+  </head>
+  <header class="site-header">
+    <nav class="navbar bg-light navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/pizza-svgrepo-com.svg"
+            alt="logo-img"
+            width="70"
+            height="70"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <!-- main start  -->
+    <main>
+      <section class="hero-site">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-left">
+              <div class="pitza-type">
+                <label class="non" for="type">Noni qanday bolsin?</label>
+                <select required class="form-select w-20 my-4" id="select">
+                  <option hidden value="defualt" selected disabled>
+                    Non turlar
+                  </option>
+                  <option value="yupqa">Yupqa</option>
+                  <option value="ortacha">O'rtacha</option>
+                  <option value="qalin">Qalin</option>
+                </select>
+              </div>
+              <div class="pitza-width">
+                <h2 class="pitza-width-title">Pitzzaning olchami</h2>
+                <div class="wrapper">
+                  <div class="wrapper-item bg-white">25 sm</div>
+                  <div class="wrapper-item bg-white">30 sm</div>
+                  <div class="wrapper-item bg-white">35 sm</div>
+                </div>
+              </div>
+              <div class="check-box">
+                <h2 class="check-box-title">Ustiga nima solaylik?</h2>
+                <div class="checkbox">
+                  <ul class="check__list-first">
+                    <li class="check-item">
+                      <input
+                        value="Kurki gosht"
+                        class="checkboxs"
+                        type="checkbox"
+                      />
+                      <label for="gosht"> Kurki gosht </label>
+                    </li>
+                    <li class="check-item">
+                      <input value="Zaytun" type="checkbox" class="checkboxs" />
+                      <label for="zaytun"> Zaytun </label>
+                    </li>
+                    <li class="check-item">
+                      <input
+                        value="Pomidor"
+                        type="checkbox"
+                        class="checkboxs"
+                      />
+                      <label for="pomidor"> Pomidor </label>
+                    </li>
+                  </ul>
+                  <ul class="check__list-second">
+                    <li class="check-item">
+                      <input
+                        value="Tuzlangan bodiring"
+                        type="checkbox"
+                        class="checkboxs"
+                      />
+                      <label for="gosht"> Tuzlangan bodiring </label>
+                    </li>
+                    <li class="check-item">
+                      <input
+                        value=" Qoziqorin"
+                        type="checkbox"
+                        class="checkboxs"
+                      />
+                      <label for="zaytun"> Qoziqorin </label>
+                    </li>
+                    <li class="check-item">
+                      <input value="Qazi" type="checkbox" class="checkboxs" />
+                      <label for="pomidor"> Qazi </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="addition-title">Qoshimcha</h3>
+              <div class="addition">
+                <div class="addition-item">
+                  <label for="type">Achchiq</label>
+                  <input value="Achchiq" type="checkbox" />
+                </div>
+                <div class="addition-item">
+                  <label for="type">Sasiskali</label>
+                  <input value="Sasiskali" type="checkbox" />
+                </div>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="hero-right">
+              <p class="p">Non:</p>
+              <div class="nons"></div>
+              <p class="p">Pitzzaning olchami:</p>
+              <div class="width"></div>
+              <p class="p d-flex">Ustida:</p>
+              <ul id="upper" class="p-0 nav-list"></ul>
+              <p class="p">Qoshimcha:</p>
+              <div class="qosh"></div>
+              <button
+                type="button"
+                class="btn1 btn"
+                data-toggle="modal"
+                data-target=".bd-example-modal-sm"
+              >
+                Buyurtma berish
+              </button>
+
+              <div
+                class="modal fade bd-example-modal-sm"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="mySmallModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end  -->
+    <!-- footer start  -->
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #929fba"
+      >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  <a href="#">
+                    <img
+                      src="img/pizza-svgrepo-com.svg"
+                      alt="logo-img"
+                      width="170"
+                      height="170"
+                    />
+                  </a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                  <a class="text-white">Pizza</a>
+                </p>
+                <p>
+                  <a class="text-white">Hamburger</a>
+                </p>
+                <p>
+                  <a class="text-white">Hot-dog</a>
+                </p>
+                <p>
+                  <a class="text-white">Shaurma</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> Toshkent, UZB</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i>
+                  javlonbeknematov0606@gmail.com
+                </p>
+                <p><i class="fas fa-phone mr-3"></i> +998903445021</p>
+                <p><i class="fas fa-print mr-3"></i> +998903445021</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #3b5998"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #55acee"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #dd4b39"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #ac2bac"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #0082ca"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #333333"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <a
+            class="text-white"
+            href="https://t.me/nematov_javlon"
+            target="_blank"
+          >
+            coded by Nematov Javlon</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- footer end  -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/plugin.js"></script>
+  <script src="./js/index.js"></script>
+</html>
