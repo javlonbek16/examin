@@ -14,7 +14,7 @@ let adder = document.querySelector('.addition')
 
 ////// choose type ////
 select.addEventListener('change', (e) => {
-    bread.textContent = `Nonning turi ${e.target.value}`
+    bread.textContent = `${e.target.value}`
 })
 
 //////Size//////
